@@ -5,8 +5,18 @@ PES Kits Configurator for PS2 is a tool to configure PES 2014 PS2 kits, it is ex
   <img src="https://github.com/Gerardo031199/PES-Kit-Configurator-For-PS2/blob/main/img/PES%20Kit%20Configurator%20For%20PS2.PNG">
 </p>
 
-# Features
-- 
+# Features 
+### You can modify:
+- Enable or Disabled, Size, Curvature for Shirt Font 
+- Enable or Disabled, Size, Position for Front Number
+- Size, Position for Back number
+- Size, Position for Short number
+- Type, Position for Overlay
+- Type for Kit Model 
+- Enable or Disabled for Kit License 
+- Color for Radar
+- Save As a config File
+
 # Download
 You can [download]() the latest version of PES Kit Configurator For PS2 for Windows
 
