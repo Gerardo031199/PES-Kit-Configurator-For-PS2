@@ -19,7 +19,7 @@ PES Kits Configurator for PS2 is a tool to configure PES 2014 PS2 kits, it is ex
 
 # Video Preview
 
-[![Alt text](https://img.youtube.com/vi/chPhlsHoEPo/0.jpg)](https://www.youtube.com/watch?v=chPhlsHoEPo)
+[![Alt text](https://img.youtube.com/vi/UhxVjiledW8/0.jpg)](https://www.youtube.com/watch?v=UhxVjiledW8)
 
 # Download
 You can [download]() the latest version of PES Kit Configurator For PS2 for Windows
