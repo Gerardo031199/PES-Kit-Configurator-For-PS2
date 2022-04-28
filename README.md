@@ -17,6 +17,10 @@ PES Kits Configurator for PS2 is a tool to configure PES 2014 PS2 kits, it is ex
 - Color for Radar
 - Save As a config File
 
+# Video Preview
+
+[![Alt text](https://img.youtube.com/vi/chPhlsHoEPo/0.jpg)](https://www.youtube.com/watch?v=chPhlsHoEPo)
+
 # Download
 You can [download]() the latest version of PES Kit Configurator For PS2 for Windows
 
@@ -40,7 +44,6 @@ This tool would not have been possible to develop without the help of [Marcos Kl
 - Invite someone from the team a beer 🍺 or a coffee ☕.
 - Give thanks publicly 🤓.
 - Donate via PayPal for future projects: [PayPal](https://www.paypal.com/paypalme/gerardocj11)
-- etc.
 
 # Links
 - [YERRY11 - Youtube](https://www.youtube.com/channel/UCzHGN5DBIXVviZQypFH_ieg)
