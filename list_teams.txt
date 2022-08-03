@@ -1,0 +1,197 @@
+0 Austria
+1 Belgium
+2 Bulgaria
+3 Croatia
+4 Czech Republic
+5 Denmark
+6 England
+7 Finland
+8 France
+9 Germany
+10 Greece
+11 Hungary
+12 Ireland
+13 Israel
+14 Italy
+15 Netherlands
+16 North Ireland
+17 Norway
+18 Poland
+19 Portugal
+20 Romania
+21 Russia
+22 Scotland
+23 Serbia
+24 Slovakia
+25 Slovenia
+26 Spain
+27 Sweden
+28 Switzerland
+29 Turkey
+30 Ukraine
+31 Wales
+32 Algeria
+33 Cameroon
+34 Côte d'Ivoire
+35 Egypt
+36 Ghana
+37 Nigeria
+38 South Africa
+39 Zambia
+40 Costa Rica
+41 Honduras
+42 Mexico
+43 United States
+44 Argentina
+45 Brazil
+46 Chile
+47 Colombia
+48 Ecuador
+49 Paraguay
+50 Peru
+51 Uruguay
+52 Australia
+53 China
+54 Japan
+55 North Korea
+56 Saudi Arabia
+57 South Korea
+58 United Arab Emirates
+59 New Zealand
+60 Classic England
+61 Classic France
+62 Classic Germany
+63 Classic Italy
+64 Classic Netherlands
+65 Classic Argentina
+66 Classic Brazil
+67 Arsenal
+68 Aston villa
+69 Cardiff city
+70 Chelsea
+71 Crystal Palace
+72 Everton
+73 Fulham
+74 Hull City
+75 Liverpool
+76 Man. City
+77 Man. United
+78 New Castle
+79 Norwich 
+80 Southampton
+81 Stoke City
+82 Sunderland
+83 Swansea
+84 Tottenham
+85 West Bromwich
+86 West ham utd
+87 AC Ajaccio 
+88 SC Bastia 
+89 FC Girondins de Bordeaux 
+90 Evian Thonon Gaillard FC 
+91 EA Guingamp
+92 LOSC Lille Métropole 
+93 FC Lorient 
+94 Olympique Lyonnais 
+95 Olympique de Marseille 
+96 AS Monaco FC
+97 Montpellier Hérault SC 
+98 FC Nantes
+99 OGC Nice 
+100 Paris Saint-Germain FC 
+101 Stade De Reims 
+102 Stade Rennais FC 
+103 AS Saint-etienne 
+104 FC Sochaux-Montbéliard 
+105 Toulouse FC 
+106 Valenciennes FC 
+107 Atalanta BC 
+108 Bologna FC 
+109 Cagliari Calcio 
+110 Calcio Catania 
+111 AC Chievo Verona 
+112 ACF Fiorentina 
+113 Genoa CFC
+114 Internazionale 
+115 Juventus 
+116 SS Lazio
+117 AS Livorno Calcio
+118 AC Milan
+119 SSC Napoli
+120 Parma FC 
+121 As Roma
+122 UC Sampdoria
+123 US Sassuolo Calcio
+124 Torino FC
+125 Udinese Calcio 
+126 Hellas Verona FC
+127 ADO Den Haag 
+128 AFC Ajax 
+129 AZ Alkmaar
+130 SC Cambuur
+131 Feyenoord 
+132 Go Ahead Eagles
+133 FC Groningen
+134 SC Heerenveen
+135 Heracles Almelo 
+136 NAC Breda 
+137 NEC Nijmegen 
+138 PSV Eindhoven 
+139 RKC Waalwijk 
+140 Roda JC 
+141 FC Twente
+142 FC Ultrecht
+143 Vitesse 
+144 PEC Zwolle 
+145 UD Almería
+146 Athletic Club
+147 Atlético Madrid
+148 FC Barcelona
+149 Real Betis
+150 Celta de Vigo
+151 Elche CF
+152 RCD Espanyol
+153 Getafe CF
+154 Granada CF
+155 Levante UD
+156 Málaga CF
+157 CA Osasuna
+158 Rayo Vallecano
+159 Real Madrid CF
+160 Real Sociedad
+161 Sevilla FC
+162 Valencia CF
+163 Real Valladolid
+164 Villarreal CF
+165 RSC Anderlecht
+166 APOEL Nicosia
+167 Sparta Praha
+168 FC Copenhagen
+169 Nordsjaelland
+170 Bayer Leverkusen
+171 FC Bayern München
+172 Schalke   
+173 Olympiacos FC
+174 Paok FC
+175 Maccabi Tel Aviv
+176 Legia Warsawa
+177 SL Benfica
+178 SC Braga
+179 FC Pacos de Ferreira
+180 FC Porto
+181 PFC CSKA Moscow
+182 FC Zenit St. Petersburg
+183 Celtic FC
+184 Motherwell FC
+185 Galatasaray AS
+186 Shakhtar Donetsk
+187 Almchendolf
+188 Ehrenhofstadt
+189 Fineseeberg
+190 Kriedbach
+191 Lengerbiltz
+192 Theeselvargen
+193 PES United
+194 We United
+195 Babylania
+196 Athletic Club Salsabie
