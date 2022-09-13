@@ -1,0 +1,9 @@
+Gui:
+    Game Name : "Pro Evolution Soccer 2011 SLES_556.38"
+# You can get this offset with cheat engine
+Game Data:
+    Nation Start Address : 0x21944C38
+    National Kit Length: 456
+    Total National: 67
+    Clubes Kit Length: 648
+    Total Clubes: 130

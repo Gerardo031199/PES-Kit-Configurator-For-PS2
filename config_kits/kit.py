@@ -25,48 +25,6 @@ class Kit:
         self.set_y_posc_short_number()
         self.set_color_radar()
 
-    def set_license(self):
-        """
-        Lee y carga en la variable self.license el valor correcto
-        """
-        license = int.from_bytes(self.data[80:82],'little', signed=False)
-        if license == 65535:
-            license = 0
-        elif license == 1:
-            license = 1
-        self.license = license
-
-    def update_license(self, new_val:str):
-        """
-        Recibe un string que puede ser Licensed o Unlicensed y actualiza el valor,
-        en los bytes del kit y en la clase
-        """
-        if new_val == "LC":
-            new_val = 1
-        elif new_val == "NL":
-            new_val = 65535
-
-        self.data[80:82] = new_val.to_bytes(2,'little', signed=False)
-        self.set_license()
-
-    def set_model(self):
-        """
-        Carga el numero de model que tiene por default el kit
-        """
-        self.model = self.data[82]
-
-    def update_model(self, new_value:int):
-        """
-        Actualiza el model en el kit
-        """
-        min_value = 0
-        max_value = 154
-        if check_value(min_value,new_value,max_value):
-            self.data[82] = new_value
-            self.set_model()
-        else:
-            raise ValueError(f"Model must be between {min_value} and {max_value}")
-        
     def set_font_shirt(self):
         """
         Carga la configuracion de nombre en la camiseta que tiene por default el kit
@@ -79,6 +37,19 @@ class Kit:
         """
         self.data[54] = new_value
         self.set_font_shirt()
+
+    def set_font_curve(self):
+        """
+        Carga el font que tiene por default el kit
+        """
+        self.font_curve = self.data[56]
+
+    def update_font_curve(self, new_value:int):
+        """
+        Actualiza el model en el kit
+        """
+        self.data[56] = new_value
+        self.set_font_curve()
 
     def set_front_number(self):
         """
@@ -135,34 +106,21 @@ class Kit:
         else:
             raise ValueError(f"Overlay y coordinate must be between {min_value} and {max_value}")
 
-    def set_font_curve(self):
+    def set_y_posc_num_back(self):
         """
-        Carga el font que tiene por default el kit
         """
-        self.font_curve = self.data[56]
+        self.y_posc_num_back = self.data[67]
 
-    def update_font_curve(self, new_value:int):
-        """
-        Actualiza el model en el kit
-        """
-        self.data[56] = new_value
-        self.set_font_curve()
-
-    def set_font_size(self):
+    def update_y_posc_num_back(self, new_value:int):
         """
         """
-        self.font_size = self.data[76]
-
-    def update_font_size(self, new_value:int):
-        """
-        """
-        min_value =0
-        max_value = 30
+        min_value = 0
+        max_value = 18
         if check_value(min_value,new_value,max_value):
-            self.data[76] = new_value
-            self.set_font_size()
+            self.data[67] = new_value
+            self.set_y_posc_num_back()
         else:
-            raise ValueError(f"font size must be between {min_value} and {max_value}")
+            raise ValueError(f"Back number x coordinate must be between {min_value} and {max_value}")
 
     def set_number_size_back(self):
         """
@@ -180,53 +138,22 @@ class Kit:
         else:
             raise ValueError(f"Number size must be between {min_value} and {max_value}")
 
-    def set_short_number_size(self):
-        """
-        """
-        self.short_number_size = self.data[74]
 
-    def update_short_number_size(self, new_value:int):
+    def set_y_posc_front_num(self):
+        """
+        """
+        self.y_posc_front_num = self.data[69]
+
+    def update_y_posc_front_num(self, new_value:int):
         """
         """
         min_value = 0
-        max_value = 28 #18
+        max_value = 29
         if check_value(min_value,new_value,max_value):
-            self.data[74] = new_value
-            self.set_short_number_size()
+            self.data[69] = new_value
+            self.set_y_posc_front_num()
         else:
-            raise ValueError(f"Short size must be between {min_value} and {max_value}")
-   
-    def set_front_number_size(self):
-        """
-        """
-        self.front_number_size = self.data[71]
-
-    def update_front_number_size(self, new_value:int):
-        """
-        """
-        min_value = 0
-        max_value = 22
-        if check_value(min_value,new_value,max_value):
-            self.data[71] = new_value
-            self.set_front_number_size()
-        else:
-            raise ValueError(f"Front number size must be between {min_value} and {max_value}")
-        
-    def set_y_posc_num_back(self):
-        """
-        """
-        self.y_posc_num_back = self.data[67]
-
-    def update_y_posc_num_back(self, new_value:int):
-        """
-        """
-        min_value = 0
-        max_value = 18
-        if check_value(min_value,new_value,max_value):
-            self.data[67] = new_value
-            self.set_y_posc_num_back()
-        else:
-            raise ValueError(f"Back number x coordinate must be between {min_value} and {max_value}")
+            raise ValueError(f"Front number y coordinate must be between {min_value} and {max_value}")
 
     def set_x_posc_front_num(self):
         """
@@ -244,21 +171,22 @@ class Kit:
         else:
             raise ValueError(f"Front number x coordinate must be between {min_value} and {max_value}")
 
-    def set_y_posc_front_num(self):
+    
+    def set_front_number_size(self):
         """
         """
-        self.y_posc_front_num = self.data[69]
+        self.front_number_size = self.data[71]
 
-    def update_y_posc_front_num(self, new_value:int):
+    def update_front_number_size(self, new_value:int):
         """
         """
         min_value = 0
-        max_value = 29
+        max_value = 22
         if check_value(min_value,new_value,max_value):
-            self.data[69] = new_value
-            self.set_y_posc_front_num()
+            self.data[71] = new_value
+            self.set_front_number_size()
         else:
-            raise ValueError(f"Front number y coordinate must be between {min_value} and {max_value}")
+            raise ValueError(f"Front number size must be between {min_value} and {max_value}")
 
     def set_y_posc_short_number(self):
         """
@@ -291,6 +219,81 @@ class Kit:
             self.set_x_posc_short_number()
         else:
             raise ValueError(f"Short number x coordinate must be between {min_value} and {max_value}")
+
+    def set_short_number_size(self):
+        """
+        """
+        self.short_number_size = self.data[74]
+
+    def update_short_number_size(self, new_value:int):
+        """
+        """
+        min_value = 0
+        max_value = 28 #18
+        if check_value(min_value,new_value,max_value):
+            self.data[74] = new_value
+            self.set_short_number_size()
+        else:
+            raise ValueError(f"Short size must be between {min_value} and {max_value}")
+
+    def set_font_size(self):
+        """
+        """
+        self.font_size = self.data[76]
+
+    def update_font_size(self, new_value:int):
+        """
+        """
+        min_value =0
+        max_value = 30
+        if check_value(min_value,new_value,max_value):
+            self.data[76] = new_value
+            self.set_font_size()
+        else:
+            raise ValueError(f"font size must be between {min_value} and {max_value}")
+
+
+    def set_license(self):
+        """
+        Lee y carga en la variable self.license el valor correcto
+        """
+        license = int.from_bytes(self.data[80:82],'little', signed=False)
+        if license == 65535:
+            license = 0
+        elif license == 1:
+            license = 1
+        self.license = license
+
+    def update_license(self, new_val:str):
+        """
+        Recibe un string que puede ser Licensed o Unlicensed y actualiza el valor,
+        en los bytes del kit y en la clase
+        """
+        if new_val == "LC":
+            new_val = 1
+        elif new_val == "NL":
+            new_val = 65535
+
+        self.data[80:82] = new_val.to_bytes(2,'little', signed=False)
+        self.set_license()
+
+    def set_model(self):
+        """
+        Carga el numero de model que tiene por default el kit
+        """
+        self.model = self.data[82]
+
+    def update_model(self, new_value:int):
+        """
+        Actualiza el model en el kit
+        """
+        min_value = 0
+        max_value = 154
+        if check_value(min_value,new_value,max_value):
+            self.data[82] = new_value
+            self.set_model()
+        else:
+            raise ValueError(f"Model must be between {min_value} and {max_value}")
             
     def set_color_radar(self):
         """
@@ -316,9 +319,7 @@ class Kit:
         b = int(hex_rgb[2] / 8)
 
         set_value(self.data, 0, 8, 31, r)
-        # actualizo el valor de verde a 7
         set_value(self.data, 1, 5, 31, g)
-        # actualizo el valor de azul a 18
         set_value(self.data, 1, 10, 31, b)
         
         self.set_color_radar()

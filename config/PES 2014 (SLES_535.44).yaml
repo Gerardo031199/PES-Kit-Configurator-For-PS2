@@ -1,0 +1,16 @@
+Gui:
+    Game Name : "Pro Evolution Soccer 2014 SLES_535.44"
+# You can get this offset with cheat engine
+Game Data:
+    Nation Start Address : 0x21944C38
+    National Kit Length: 456
+    Total National: 67
+    Clubes Kit Length: 648
+    Total Clubes: 130
+
+    Teams Offsets Table: 543548785 #3161904
+    Teams Table Size: 3152 #5296
+    Teams Text Data Size: 5171 #
+
+    #Nationalities Offsets Table: 3169872
+    #Nationalities Table Size: 976
